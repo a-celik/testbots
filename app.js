@@ -9,13 +9,19 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 //Create chat bot
 var connector = new builder.ChatConnector({
-    //appId: process.env.MICROSOFT_APP_ID, //feaa42f3-e01e-4149-b90b-56bcaec38070
-    //appPassword: process.env.MICROSOFT_APP_PASSWORD //NegWuJZmtpMvX4XKftem7oc
-    appId: feaa42f3-e01e-4149-b90b-56bcaec38070, //feaa42f3-e01e-4149-b90b-56bcaec38070
-    appPassword: NegWuJZmtpMvX4XKftem7oc //NegWuJZmtpMvX4XKftem7oc
+    appId: process.env.BOTFRAMEWORK_APPID, //feaa42f3-e01e-4149-b90b-56bcaec38070
+    appPassword: process.env.BOTFRAMEWORK_APPSECRET  //NegWuJZmtpMvX4XKftem7oc
+    //appId: feaa42f3-e01e-4149-b90b-56bcaec38070, //feaa42f3-e01e-4149-b90b-56bcaec38070
+    //appPassword: NegWuJZmtpMvX4XKftem7oc //NegWuJZmtpMvX4XKftem7oc
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
+
+
+server.get(/.*/, restify.serveStatic({
+	'directory': '.',
+	'default': 'index.html'
+}));
 
 //Dialog
 var intents = new builder.IntentDialog();
