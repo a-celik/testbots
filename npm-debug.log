@@ -1,0 +1,271 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'azure-cli',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'azure-cli', null ]
+7 verbose cache add spec azure-cli
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'azure-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'azure-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed azure-cli@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for azure-cli
+11 info addNameTag [ 'azure-cli', 'latest' ]
+12 silly mapToRegistry name azure-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'azure-cli',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'azure-cli',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/azure-cli
+17 verbose addNameTag registry:https://registry.npmjs.org/azure-cli not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/azure-cli
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 10:24:32 PM
+21 verbose request id 95801afaf62b28b4
+22 verbose etag "8CXBCJHG2USZQE9S9LKTE96SL"
+23 http request GET https://registry.npmjs.org/azure-cli
+24 http 304 https://registry.npmjs.org/azure-cli
+25 verbose headers { date: 'Tue, 26 Jul 2016 05:24:33 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"8CXBCJHG2USZQE9S9LKTE96SL"',
+25 verbose headers   age: '18',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-sjc3628-SJC',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1469510673.036395,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Tue, 26 Jul 2016 05:24:33 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"8CXBCJHG2USZQE9S9LKTE96SL"',
+26 silly get     age: '18',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-sjc3628-SJC',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1469510673.036395,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/azure-cli from cache
+28 verbose get saving azure-cli to /Users/alpkaancelik/.npm/registry.npmjs.org/azure-cli/.cache.json
+29 verbose correctMkdir /Users/alpkaancelik/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for azure-cli with tag latest
+31 silly addNamed azure-cli@0.10.2
+32 verbose addNamed "0.10.2" is a plain semver version for azure-cli
+33 silly cache afterAdd azure-cli@0.10.2
+34 verbose afterAdd /Users/alpkaancelik/.npm/azure-cli/0.10.2/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/alpkaancelik/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/alpkaancelik/.npm/azure-cli/0.10.2/package/package.json written
+37 silly install resolved [ { name: 'azure-cli',
+37 silly install resolved     author: { name: 'Microsoft Corporation' },
+37 silly install resolved     contributors:
+37 silly install resolved      [ [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object] ],
+37 silly install resolved     version: '0.10.2',
+37 silly install resolved     description: 'Microsoft Azure Cross Platform Command Line tool',
+37 silly install resolved     tags: [ 'azure', 'cli' ],
+37 silly install resolved     keywords: [ 'node', 'azure', 'cli', 'cloud hosting', 'deployment' ],
+37 silly install resolved     main: './lib/cli.js',
+37 silly install resolved     preferGlobal: 'true',
+37 silly install resolved     engines: { node: '>= 4.2.4' },
+37 silly install resolved     license: 'Apache-2.0',
+37 silly install resolved     dependencies:
+37 silly install resolved      { 'adal-node': '0.1.21',
+37 silly install resolved        async: '1.4.2',
+37 silly install resolved        'azure-common': '0.9.16',
+37 silly install resolved        'azure-arm-authorization': '2.0.0',
+37 silly install resolved        'azure-arm-cdn': '0.2.1',
+37 silly install resolved        'azure-arm-commerce': '0.1.1',
+37 silly install resolved        'azure-arm-compute': '0.19.0',
+37 silly install resolved        'azure-arm-hdinsight': '0.2.0',
+37 silly install resolved        'azure-arm-hdinsight-jobs': '0.1.0',
+37 silly install resolved        'azure-arm-insights': '0.11.1',
+37 silly install resolved        'azure-arm-servermanagement': '0.1.2',
+37 silly install resolved        'azure-arm-network': '0.13.2',
+37 silly install resolved        'azure-arm-powerbiembedded': '0.1.0',
+37 silly install resolved        'azure-arm-trafficmanager': '0.10.5',
+37 silly install resolved        'azure-arm-dns': '0.10.1',
+37 silly install resolved        'azure-arm-website': '0.10.0',
+37 silly install resolved        'azure-arm-rediscache': '0.2.1',
+37 silly install resolved        'azure-arm-datalake-analytics': '^0.4.1',
+37 silly install resolved        'azure-arm-datalake-store': '^0.4.0',
+37 silly install resolved        'azure-arm-devtestlabs': '0.1.0',
+37 silly install resolved        'azure-graph': '1.0.1',
+37 silly install resolved        'azure-gallery': '2.0.0-pre.18',
+37 silly install resolved        'azure-keyvault': '0.10.1',
+37 silly install resolved        'azure-asm-compute': '0.15.0',
+37 silly install resolved        'azure-asm-hdinsight': '0.10.2',
+37 silly install resolved        'azure-asm-trafficmanager': '0.10.3',
+37 silly install resolved        'azure-asm-mgmt': '0.10.1',
+37 silly install resolved        'azure-monitoring': '0.10.2',
+37 silly install resolved        'azure-asm-network': '0.11.0',
+37 silly install resolved        'azure-arm-resource': '1.4.4-preview',
+37 silly install resolved        'azure-arm-storage': '0.13.1-preview',
+37 silly install resolved        'azure-asm-sb': '0.10.1',
+37 silly install resolved        'azure-asm-sql': '0.10.1',
+37 silly install resolved        'azure-asm-storage': '0.11.0',
+37 silly install resolved        'azure-asm-subscription': '0.10.1',
+37 silly install resolved        'azure-asm-website': '0.10.1',
+37 silly install resolved        'azure-storage': '1.0.1',
+37 silly install resolved        'azure-arm-batch': '0.2.0',
+37 silly install resolved        'azure-batch': '0.4.0',
+37 silly install resolved        applicationinsights: '0.15.12',
+37 silly install resolved        'caller-id': '0.1.x',
+37 silly install resolved        colors: '1.1.2',
+37 silly install resolved        commander: '1.0.4',
+37 silly install resolved        'easy-table': '0.0.1',
+37 silly install resolved        'event-stream': '3.1.5',
+37 silly install resolved        eyes: '0.x.x',
+37 silly install resolved        github: '0.1.6',
+37 silly install resolved        'fast-json-patch': '0.5.6',
+37 silly install resolved        js2xmlparser: '1.0.0',
+37 silly install resolved        jsonlint: '1.6.2',
+37 silly install resolved        jsrsasign: '4.8.2 ',
+37 silly install resolved        kuduscript: '1.0.6',
+37 silly install resolved        moment: '^2.8.0',
+37 silly install resolved        'ms-rest': '^1.12.0',
+37 silly install resolved        'ms-rest-azure': '^1.12.0',
+37 silly install resolved        'node-forge': '0.6.23',
+37 silly install resolved        'node-uuid': '1.2.0',
+37 silly install resolved        omelette: '0.1.0',
+37 silly install resolved        'openssl-wrapper': '0.2.1',
+37 silly install resolved        prompt: '0.2.14',
+37 silly install resolved        'readable-stream': '~1.0.0',
+37 silly install resolved        request: '2.69.0',
+37 silly install resolved        'ssh-key-to-pem': '0.11.0',
+37 silly install resolved        streamline: '0.10.17',
+37 silly install resolved        'streamline-streams': '0.1.5',
+37 silly install resolved        'sync-request': '3.0.0',
+37 silly install resolved        through: '2.3.4',
+37 silly install resolved        tunnel: '0.0.2',
+37 silly install resolved        underscore: '1.4.x',
+37 silly install resolved        validator: '5.2.0',
+37 silly install resolved        winston: '2.1.1',
+37 silly install resolved        wordwrap: '0.0.2',
+37 silly install resolved        xml2js: '0.1.x',
+37 silly install resolved        xmlbuilder: '0.4.x',
+37 silly install resolved        read: '^1.0.7' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { istanbul: '0.3.19',
+37 silly install resolved        mocha: '1.16.0',
+37 silly install resolved        jshint: '<= 2.6.0',
+37 silly install resolved        sinon: '*',
+37 silly install resolved        should: '3.3.2',
+37 silly install resolved        'winston-memory': '*',
+37 silly install resolved        nock: '0.16' },
+37 silly install resolved     homepage: 'https://github.com/Azure/azure-xplat-cli',
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+ssh://git@github.com/Azure/azure-xplat-cli.git' },
+37 silly install resolved     bugs: { url: 'https://github.com/Azure/azure-xplat-cli/issues' },
+37 silly install resolved     scripts:
+37 silly install resolved      { test: 'npm -s run-script jshint && npm -s run-script unit-arm && npm -s run-script unit',
+37 silly install resolved        unit: 'node scripts/unit.js testlist.txt',
+37 silly install resolved        'unit-arm': 'node scripts/unit.js testlist-arm.txt',
+37 silly install resolved        'unit-vm': 'node scripts/unit.js testlist-vm.txt',
+37 silly install resolved        'unit-vm-live': 'node scripts/unit.js testlist-vm-live.txt',
+37 silly install resolved        'unit-arm-vm': 'node scripts/unit.js testlist-arm-vm.txt',
+37 silly install resolved        'unit-arm-vm-live': 'node scripts/unit.js testlist-arm-vm-live.txt',
+37 silly install resolved        'unit-arm-vm-ping': 'node scripts/unit.js testlist-arm-vm-ping.txt',
+37 silly install resolved        'unit-arm-vm-extension-live': 'node scripts/unit.js testlist-arm-vm-extension-live.txt',
+37 silly install resolved        'unit-arm-vmss': 'node scripts/unit.js testlist-arm-vmss.txt',
+37 silly install resolved        'unit-arm-container': 'node scripts/unit.js testlist-arm-container.txt',
+37 silly install resolved        jshint: 'jshint lib --jslint-reporter --extra-ext ._js',
+37 silly install resolved        preci: 'jshint lib --reporter=checkstyle --extra-ext ._js > checkstyle-result.xml',
+37 silly install resolved        ci: 'node scripts/unit.js testlist.txt -xunit',
+37 silly install resolved        cover: 'istanbul cover ./node_modules/mocha/bin/_mocha -- test/util/profile test/util/authentication -R spec -t 5000',
+37 silly install resolved        'extract-labels': 'node scripts/extract-labels' },
+37 silly install resolved     bin: { azure: './bin/azure' },
+37 silly install resolved     gitHead: '8e8131db5147753e74372fb9876082f713b25ba8',
+37 silly install resolved     _id: 'azure-cli@0.10.2',
+37 silly install resolved     _shasum: '5d9d758d17f1e1f50daade93599cbf6344ae82de',
+37 silly install resolved     _from: 'azure-cli@latest',
+37 silly install resolved     _npmVersion: '3.8.0',
+37 silly install resolved     _nodeVersion: '4.2.4',
+37 silly install resolved     _npmUser: { name: 'windowsazure', email: 'azuresdk@outlook.com' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '5d9d758d17f1e1f50daade93599cbf6344ae82de',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/azure-cli/-/azure-cli-0.10.2.tgz' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/azure-cli-0.10.2.tgz_1467925769940_0.6549277503509074' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/azure-cli/-/azure-cli-0.10.2.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install azure-cli@0.10.2 into /usr/local/lib
+39 info installOne azure-cli@0.10.2
+40 verbose installOne of azure-cli to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/alpkaancelik/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/alpkaancelik/.npm/_locks/azure-cli-1146293a004c56d1.lock for /usr/local/lib/node_modules/azure-cli
+43 silly install write writing azure-cli 0.10.2 to /usr/local/lib/node_modules/azure-cli
+44 verbose unbuild lib/node_modules/azure-cli
+45 silly gentlyRm /usr/local/lib/node_modules/azure-cli is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/azure-cli
+47 verbose tar unpack /Users/alpkaancelik/.npm/azure-cli/0.10.2/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/azure-cli
+49 silly gentlyRm /usr/local/lib/node_modules/azure-cli is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/azure-cli
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/alpkaancelik/.npm/azure-cli/0.10.2/package.tgz
+53 verbose unlock done using /Users/alpkaancelik/.npm/_locks/azure-cli-1146293a004c56d1.lock for /usr/local/lib/node_modules/azure-cli
+54 verbose fstream_path /usr/local/lib/node_modules/azure-cli
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/azure-cli'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/alpkaancelik/Desktop/testbot
+60 error Darwin 15.0.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "azure-cli" "-g"
+62 error node v4.4.7
+63 error npm  v2.15.8
+64 error path /usr/local/lib/node_modules/azure-cli
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/azure-cli'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/azure-cli']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/azure-cli',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/azure-cli',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/azure-cli
+72 silly gentlyRm /usr/local/lib/node_modules/azure-cli is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/azure-cli
