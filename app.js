@@ -15,7 +15,7 @@ var connector = new builder.ChatConnector({
     appPassword: NegWuJZmtpMvX4XKftem7oc //NegWuJZmtpMvX4XKftem7oc
 });
 var bot = new builder.UniversalBot(connector);
-server.post('https://testbot0.azurewebsites.net/api/messages', connector.listen());
+server.post('/api/messages', connector.listen());
 
 //Dialog
 var intents = new builder.IntentDialog();
